@@ -5,15 +5,36 @@
         <title>De4982 page's title</title>
 	<link rel="icon" href="favicon.ico"><!-- 32×32 -->
 	<style>
-		body {
-			background-image: url('be.jpg'); // images/be.jpg maldives.jpg
-			background-repeat:no-repeat;
-			background-size:cover; //100% 100vh;
-		}
+html, body{
+  padding: 0;
+  margin: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  background-image: url('be.jpg'); /* images/be.jpg maldives.jpg */
+  background-repeat:no-repeat;
+  background-size:cover; /*100% 100vh;*/
+}
+.container {
+  position: relative;
+  background-color: red;	
+}
+.bottomright {
+  position: fixed;
+  bottom: 8px;
+  right: 16px;
+  font-size: 32px;
+  color: white;	
+  font-family: system-ui;
+}
 	</style>
     </head>
     <body>
-        <h1>De4982 heading</h1>
-        <p>De4982 paragraph.</p>
+        <div class="container">
+		<div class="bottomright">Denis Rayanov</div>		
+	</div>
     </body>
 </html>
